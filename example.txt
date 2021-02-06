@@ -1,2 +1,3 @@
 TUT-1: Hello world
 FEATURE-1: Feature commit 1
+FEATURE-2: Feature commit 2
