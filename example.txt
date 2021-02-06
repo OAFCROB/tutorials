@@ -1,1 +1,2 @@
 Merge commit 1
+Merge commit 2
