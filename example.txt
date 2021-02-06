@@ -1,1 +1,2 @@
 Merge commit 1
+Feature commit 1
