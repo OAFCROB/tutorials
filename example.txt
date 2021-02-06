@@ -1,1 +1,2 @@
 Rebase commit 1
+Rebase commit 2
