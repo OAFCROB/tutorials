@@ -86,8 +86,13 @@ This command is iterrating through the commits we've done and forcing us to deal
  2. Make some changes to the readme file and commit them.
  3. Now checkout the main branch and ensure you've got the latest `git checkout main && git pull origin main`
  4. After you've got the changes for the main branch, checkout the rebasing branch `git checkout rebasing-branch`
- 5. We'll rebase in the main branch into our feature branch `git rebase -i main`
- 6. You'll have to resolve the merge conflicts and add them via `git add .` followed by `git rebase --continue`
+ 5. We'll rebase in the main branch into our feature branch `git rebase -i main`. ***Please note:*** It's advised to create a backup branch before doing this until you've gain confidence in rebasing. This will ensure that if it goes wrong you've not lost anything and have a fallback. 
+ 6. You'll have to resolve the merge conflicts and add them via `git add .` followed by `git rebase --continue`. When we're rebasing here, the branch we're rebasing in is considered to be HEAD but if you're unsure you can always abort the rebase with `git rebase --abort`. 
+ 7. Finally, when you're pushing the commits back up to a remote branch you'll need to do `git push origin <BRANCH> --force-with-lease`.
 
 ### 5. Pulling from origin with rebase
+
+ 1. `git pull origin <BRANCH> --rebase`
+
 ### 6. Merging pull request strategies
+  
